@@ -12,5 +12,11 @@
 
   <body>
     <%= yield %>
+    <%= react_component "Landing", { output: @output }, :div %>
+    <%= content_tag :div,
+    id: "output_data",
+    data: @output.to_json do %>
+      <% end %>
+
   </body>
 </html>
