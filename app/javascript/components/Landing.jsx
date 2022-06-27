@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 // import { BrowserRouter, Router, Route } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Cities from './Cities'
+import Modal from './Modal'
 
 const Landing = ({ data }) => {
   // const [count, setCount] = useState(0);
@@ -21,8 +22,11 @@ const Landing = ({ data }) => {
           </form>
 
           <Routes>
-            <Route path="/" element={<Cities data={data}/>} exact />
+            <Route exact path="/" element={<Cities data={data} />} />
+            <Route exact path="/city" element={<Modal />} />
           </Routes>
+
+          {/* <Modal /> */}
 
           <div className="footer-text">
             Built with <a href="https://openweathermap.org" target="_blank">openweathermap.org</a> API

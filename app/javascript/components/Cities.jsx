@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Cities = ({ data }) => {
   // const Cities = () => {
@@ -10,8 +11,10 @@ const Cities = ({ data }) => {
     <div className="container">
       <div className="buttons-section">
 
+        <Link to="/city">Go to city</Link>
+
         <div className="button-container">
-          <button className="city-button">City 1 ({data[0].name})</button>
+          <button component={Link} to="/city" className="city-button">City 1 ({data[0].name})</button>
           <button className="more-button"> + </button>
         </div>
 
