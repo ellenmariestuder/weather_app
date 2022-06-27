@@ -28,6 +28,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import '../../assets/stylesheets/application.css'
 import Landing from '../components/Landing';
 
 document.addEventListener('DOMContentLoaded', () => {
