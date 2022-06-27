@@ -13,6 +13,7 @@
   <body>
     <%= yield %>
     <%= react_component "Landing", { output: @output }, :div %>
+    <%= react_component "Modal", { output: @output }, :div %>
     <%= content_tag :div,
     id: "output_data",
     data: @output.to_json do %>

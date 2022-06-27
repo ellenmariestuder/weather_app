@@ -31,6 +31,7 @@ import ReactDOM from 'react-dom'
 import '../../assets/stylesheets/application.css'
 import Landing from '../components/Landing';
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('output_data')
   const data = JSON.parse(node.getAttribute('data'))
