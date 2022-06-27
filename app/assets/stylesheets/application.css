@@ -10,37 +10,21 @@
 }
 
 .container {
-  /* padding: 5% 10% 30% 30%; */
   padding-top: 5%;
   padding-left: 15%;
   padding-right: 15%;
-  /* position: relative;
-  z-index: 1;
-  overflow: hidden; */
 }
-
-/* .background {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: url('weather-background.jpg');
-  opacity: 0.4;
-} */
 
 h1 {
   text-align: left;
-  /* padding-left: 10%; */
 }
 
 .buttons-section {
   display: flex;
   flex-direction: column;
-  /* margin: auto; */
 }
 
 form {
-  /* margin: 5px; */
   padding: 5px;
 }
 
@@ -73,12 +57,18 @@ form>img {
   cursor: pointer;
   padding: 5px;
   margin: 5px;
+  text-decoration: none;
+  color: #262626;
 }
 
 .city-button:hover,
 .more-button:hover {
   opacity: .5;
 }
+
+/* Link {
+  text-decoration: none;
+} */
 
 .footer-text {
   margin-top: 10px;

@@ -23,7 +23,7 @@ const Landing = ({ data }) => {
 
           <Routes>
             <Route exact path="/" element={<Cities data={data} />} />
-            <Route exact path="/city" element={<Modal />} />
+            <Route exact path="/city" element={<Modal data={data} />} />
           </Routes>
 
           {/* <Modal /> */}
