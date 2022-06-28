@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import { useEffect } from 'react/cjs/react.production.min'
 import Cities from './Cities'
 import Modal from './Modal'
 
 const Landing = ({ data_c1, data_c2, data_c3, data_c4, data_c5 }) => {
   const [data, setData] = useState();
-  // const increase = () => setCount(count + 1);
-  // const decrease = () => setCount(count - 1);
-
-  // useEffect(() => { setData(data); console.log(data) })
 
   return (
     <Router>
@@ -24,10 +19,7 @@ const Landing = ({ data_c1, data_c2, data_c3, data_c4, data_c5 }) => {
           </form>
 
           <Routes>
-            {/* <Route exact path="/" element={<Cities data_city1={data_city1} />} />
-            <Route exact path="/city" element={<Modal data_city1={data_city1} />} /> */}
             <Route exact path="/" element={<Cities setData={setData} data_c1={data_c1} data_c2={data_c2} data_c3={data_c3} data_c4={data_c4} data_c5={data_c5} />} />
-            {/* <Route exact path="/" element={<Cities updateCity={updateCity} data_c1={data_c1} data_c2={data_c2} data_c3={data_c3} data_c4={data_c4} data_c5={data_c5} />} /> */}
             <Route exact path="/city" element={<Modal data={data} />} />
           </Routes>
 
