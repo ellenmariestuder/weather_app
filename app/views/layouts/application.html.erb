@@ -17,28 +17,59 @@
       output_c2: @output_c2, 
       output_c3: @output_c3, 
       output_c4: @output_c4, 
-      output_c5: @output_c5, 
+      output_c5: @output_c5,
+      output_c1_w: @output_c1_w 
       }, :div %>
     <%= content_tag :div,
     id: "output_data_c1",
     data: @output_c1.to_json do %>
       <% end %>
-    <%= content_tag :div,
-    id: "output_data_c2",
-    data: @output_c2.to_json do %>
-      <% end %>
-    <%= content_tag :div,
-    id: "output_data_c3",
-    data: @output_c3.to_json do %>
-      <% end %>
-    <%= content_tag :div,
-    id: "output_data_c4",
-    data: @output_c4.to_json do %>
-      <% end %>
-    <%= content_tag :div,
-    id: "output_data_c5",
-    data: @output_c5.to_json do %>
-      <% end %>
+    
+      <%= content_tag :div,
+      id: "output_data_c2",
+      data: @output_c2.to_json do %>
+        <% end %>
+    
+        <%= content_tag :div,
+        id: "output_data_c3",
+        data: @output_c3.to_json do %>
+          <% end %>
+    
+          <%= content_tag :div,
+          id: "output_data_c4",
+          data: @output_c4.to_json do %>
+            <% end %>
+    
+            <%= content_tag :div,
+            id: "output_data_c5",
+            data: @output_c5.to_json do %>
+              <% end %>
 
-  </body>
-</html>
+              <%= content_tag :div,
+              id: "output_data_c1_w",
+              data: @output_c1_w.to_json do %>
+                <% end %>
+
+              <%= content_tag :div,
+              id: "output_data_c2_w",
+              data: @output_c2_w.to_json do %>
+                <% end %>
+
+              <%= content_tag :div,
+              id: "output_data_c3_w",
+              data: @output_c3_w.to_json do %>
+                <% end %>
+
+              <%= content_tag :div,
+              id: "output_data_c4_w",
+              data: @output_c4_w.to_json do %>
+                <% end %>
+
+              <%= content_tag :div,
+              id: "output_data_c5_w",
+              data: @output_c5_w.to_json do %>
+                <% end %>
+              
+              </body>
+              </html>
+              

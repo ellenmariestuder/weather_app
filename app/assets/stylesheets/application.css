@@ -51,6 +51,11 @@ form>img {
   /* padding: 5px; */
 }
 
+.city-button {
+  font-weight: bold;
+  font-size: medium;
+}
+
 .city-button,
 .more-button {
   background-color: transparent;

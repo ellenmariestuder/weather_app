@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Cities from './Cities'
 import Modal from './Modal'
 
-const Landing = ({ data_c1, data_c2, data_c3, data_c4, data_c5 }) => {
+const Landing = ({ data_c1, data_c2, data_c3, data_c4, data_c5, data_c1_w, data_c2_w, data_c3_w, data_c4_w, data_c5_w }) => {
   const [data, setData] = useState();
 
   return (
@@ -19,7 +19,7 @@ const Landing = ({ data_c1, data_c2, data_c3, data_c4, data_c5 }) => {
           </form>
 
           <Routes>
-            <Route exact path="/" element={<Cities setData={setData} data_c1={data_c1} data_c2={data_c2} data_c3={data_c3} data_c4={data_c4} data_c5={data_c5} />} />
+            <Route exact path="/" element={<Cities setData={setData} data_c1={data_c1} data_c2={data_c2} data_c3={data_c3} data_c4={data_c4} data_c5={data_c5} data_c1_w={data_c1_w} data_c2_w={data_c2_w} data_c3_w={data_c3_w} data_c4_w={data_c4_w} data_c5_w={data_c5_w} />} />
             <Route exact path="/city" element={<Modal data={data} />} />
           </Routes>
 
