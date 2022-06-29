@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
-const Modal = ({ data }) => {
+const Modal = ({ data, details, show, setShow }) => {
 
-  return (
-    <div>
+  const content = show && (
+    <div className="modal">
       <h3>Here's the weather in {data[0].name}: </h3>
-      <div>Please check back again. </div>
-      <Link to="/">Close</Link>
+      <div>{details.main.temp} </div>
+      <button onClick={() => setShow(false)}> X </button>
     </div>
+
   )
+
+  return content
 }
 
 export default Modal;

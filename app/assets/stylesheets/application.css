@@ -46,7 +46,8 @@ form>img {
 .button-container {
   border-radius: 12px;
   min-width: 90%;
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: rgba(255, 192, 203, 0.5);
   margin: 5px;
   /* padding: 5px; */
 }
@@ -72,9 +73,16 @@ form>img {
   opacity: .5;
 }
 
-/* Link {
-  text-decoration: none;
-} */
+.modal {
+  padding: 3%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: pink; */
+  background-color: rgba(255, 192, 203, 0.9);
+  border-radius: 12px;
+}
 
 .footer-text {
   margin-top: 10px;
