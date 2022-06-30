@@ -1,24 +1,14 @@
-# README
+# Weather App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple weather app that displays weather information for pre-selected and user-searched cities. Click on a city name to open a modal displaying additional weather details for that city. Type a city name in the search bar and hit enter to open a modal displaying weather details for that city. 
 
-Things you may want to cover:
+## Features
+ * Landing page that displays current temperature in five pre-selected cities
+ * Modals that display additional weather details for the selected city
+ * Search bar to look up weather conditions in any city globally
 
-* Ruby version
+## Built With
+ * Frontend: React
+ * Backend: Rails
+ * API: openweathermap.org
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
