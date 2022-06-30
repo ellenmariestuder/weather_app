@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     
     # api call for default city 1 of 5 (detailed weather data)
     @params_c1 = { 
-      :q => 'london',
+      :q => 'new york',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
@@ -18,7 +18,7 @@ class PagesController < ApplicationController
 
     # api call for default city 2 of 5 (detailed weather data)
     @params_c2 = { 
-      :q => 'madrid',
+      :q => 'brussels',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
@@ -28,7 +28,7 @@ class PagesController < ApplicationController
 
     # api call for default city 3 of 5 (detailed weather data)
     @params_c3 = { 
-      :q => 'tokyo',
+      :q => 'kyoto',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
