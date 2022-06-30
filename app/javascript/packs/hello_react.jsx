@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import '../../assets/stylesheets/application.css'
+import '../../assets/images/clouds.jpeg'
 import Landing from '../components/Landing';
 
 
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Landing
       data_c1={data_c1} data_c2={data_c2} data_c3={data_c3} data_c4={data_c4} data_c5={data_c5}
-      // data_c1_w={data_c1_w} data_c2_w={data_c2_w} data_c3_w={data_c3_w} data_c4_w={data_c4_w} data_c5_w={data_c5_w}
+    // data_c1_w={data_c1_w} data_c2_w={data_c2_w} data_c3_w={data_c3_w} data_c4_w={data_c4_w} data_c5_w={data_c5_w}
     />,
     document.body.appendChild(document.createElement('div')),
   )
