@@ -4,9 +4,13 @@ const Modal = ({ data, details, show, setShow }) => {
 
   const content = show && (
     <div className="modal">
-      <h3>Here's the weather in {data[0].name}: </h3>
-      <div>{details.main.temp} </div>
-      <button onClick={() => setShow(false)}> X </button>
+      <div className="modal-title">{data[0].name}</div>
+      <div className="conditions">{details.weather[0].main} </div>
+      <button className="close-modal" onClick={() => setShow(false)}>x</button>
+      <h1>{Math.round(details.main.temp)}°F </h1>
+      <div className="feels-like">Feels like {Math.round(details.main.feels_like)}° </div>
+      <div className="temp-hi">Hi: {Math.round(details.main.temp_max)}° </div>
+      <div className="temp-lo">Lo: {Math.round(details.main.temp_min)}° </div>
     </div>
 
   )
