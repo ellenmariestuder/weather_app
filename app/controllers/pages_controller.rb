@@ -2,122 +2,59 @@ class PagesController < ApplicationController
   def index
     require 'net/http'
     require 'json'
-    
-    @url = 'http://api.openweathermap.org/geo/1.0/direct'
-    # @url = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=d864613bf3c891e810c6ba0054f4396c'
+
+    @url = 'https://api.openweathermap.org/data/2.5/weather'
     @uri = URI(@url)
-
-    # api call for default city 1 of 5
-    @params_city1 = { 
-      :q => 'London',
-      :limit => 5, 
-      :appid => 'd864613bf3c891e810c6ba0054f4396c'
-    }
-    @uri.query = URI.encode_www_form(@params_city1)
-    @response_city1 = Net::HTTP.get(@uri)
-    @output_c1 = JSON.parse(@response_city1)
-
-    # api call for default city 2 of 5
-    @params_city2 = { 
-      :q => 'Madrid',
-      :limit => 5, 
-      :appid => 'd864613bf3c891e810c6ba0054f4396c'
-    }
-    @uri.query = URI.encode_www_form(@params_city2)
-    @response_city2 = Net::HTTP.get(@uri)
-    @output_c2 = JSON.parse(@response_city2)
-
-    # api call for default city 3 of 5
-    @params_city3 = { 
-      :q => 'Tokyo',
-      :limit => 5, 
-      :appid => 'd864613bf3c891e810c6ba0054f4396c'
-    }
-    @uri.query = URI.encode_www_form(@params_city3)
-    @response_city3 = Net::HTTP.get(@uri)
-    @output_c3 = JSON.parse(@response_city3)
-
-    # api call for default city 4 of 5
-    @params_city4 = { 
-      :q => 'Delhi',
-      :limit => 5, 
-      :appid => 'd864613bf3c891e810c6ba0054f4396c'
-    }
-    @uri.query = URI.encode_www_form(@params_city4)
-    @response_city4 = Net::HTTP.get(@uri)
-    @output_c4 = JSON.parse(@response_city4)
-
-    # api call for default city 5 of 5
-    @params_city5 = { 
-      :q => 'Athens',
-      :limit => 5, 
-      :appid => 'd864613bf3c891e810c6ba0054f4396c'
-    }
-    @uri.query = URI.encode_www_form(@params_city5)
-    @response_city5 = Net::HTTP.get(@uri)
-    @output_c5 = JSON.parse(@response_city5)
-
-    # -------------------------------------------
-
-    # @url2 = 'https://api.openweathermap.org/data/2.5/weather?lat=37.9839412&lon=23.7283052&units=imperial&appid=d864613bf3c891e810c6ba0054f4396c'
-    # @url2 = 'https://api.openweathermap.org/data/2.5/weather?lat=37.9839412&lon=23.7283052&units=imperial'
-    @url2 = 'https://api.openweathermap.org/data/2.5/weather'
-    @uri2 = URI(@url2)
     
     # api call for default city 1 of 5 (detailed weather data)
-    @params_city1_w = { 
-      :lat => '51.5156177',
-      :lon => '-0.0919983',
+    @params_c1 = { 
+      :q => 'london',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
-    @uri2.query = URI.encode_www_form(@params_city1_w)
-    @response_city1_w = Net::HTTP.get(@uri2)
-    @output_c1_w = JSON.parse(@response_city1_w)
+    @uri.query = URI.encode_www_form(@params_c1)
+    @response_c1 = Net::HTTP.get(@uri)
+    @output_c1 = JSON.parse(@response_c1)
 
     # api call for default city 2 of 5 (detailed weather data)
-    @params_city2_w = { 
-      :lat => '40.4167047',
-      :lon => '-3.7035825',
+    @params_c2 = { 
+      :q => 'madrid',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
-    @uri2.query = URI.encode_www_form(@params_city2_w)
-    @response_city2_w = Net::HTTP.get(@uri2)
-    @output_c2_w = JSON.parse(@response_city2_w)
+    @uri.query = URI.encode_www_form(@params_c2)
+    @response_c2 = Net::HTTP.get(@uri)
+    @output_c2 = JSON.parse(@response_c2)
 
     # api call for default city 3 of 5 (detailed weather data)
-    @params_city3_w = { 
-      :lat => '35.6828387',
-      :lon => '139.7594549',
+    @params_c3 = { 
+      :q => 'tokyo',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
-    @uri2.query = URI.encode_www_form(@params_city3_w)
-    @response_city3_w = Net::HTTP.get(@uri2)
-    @output_c3_w = JSON.parse(@response_city3_w)
+    @uri.query = URI.encode_www_form(@params_c3)
+    @response_c3 = Net::HTTP.get(@uri)
+    @output_c3 = JSON.parse(@response_c3)
 
     # api call for default city 4 of 5 (detailed weather data)
-    @params_city4_w = { 
-      :lat => '28.6517178',
-      :lon => '77.2219388',
+    @params_c4 = { 
+      :q => 'delhi',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
-    @uri2.query = URI.encode_www_form(@params_city4_w)
-    @response_city4_w = Net::HTTP.get(@uri2)
-    @output_c4_w = JSON.parse(@response_city4_w)
+    @uri.query = URI.encode_www_form(@params_c4)
+    @response_c4 = Net::HTTP.get(@uri)
+    @output_c4 = JSON.parse(@response_c4)
 
     # api call for default city 5 of 5 (detailed weather data)
-    @params_city5_w = { 
-      :lat => '37.9839412',
-      :lon => '23.7283052',
+    @params_c5 = { 
+      :q => 'athens',
       :units => 'imperial',
       :appid => 'd864613bf3c891e810c6ba0054f4396c'
     }
-    @uri2.query = URI.encode_www_form(@params_city5_w)
-    @response_city5_w = Net::HTTP.get(@uri2)
-    @output_c5_w = JSON.parse(@response_city5_w)
+    @uri.query = URI.encode_www_form(@params_c5)
+    @response_c5 = Net::HTTP.get(@uri)
+    @output_c5 = JSON.parse(@response_c5)
 
   end
 end

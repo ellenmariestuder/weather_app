@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Modal = ({ data, details, show, setShow }) => {
+const Modal = ({ details, show, setShow }) => {
 
   const content = show && (
     <div className="modal">
-      <div className="modal-title">{data[0].name}</div>
+      <div className="modal-title">{details.name}</div>
       <div className="conditions">{details.weather[0].main} </div>
       <button className="close-modal" onClick={() => setShow(false)}>x</button>
       <h1>{Math.round(details.main.temp)}°F </h1>
