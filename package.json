@@ -23,8 +23,5 @@
   "dependencies": {
     "webpack": "^5.73.0",
     "@rails/webpacker": "5.1.1"
-  },
-  "engines": {
-    "node": "14.X"
   }
 }
