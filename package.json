@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/ellenmariestuder/weather_app#readme",
   "dependencies": {
-    "webpack": "^5.73.0"
+    "webpack": "^5.73.0",
+    "@rails/webpacker": "5.1.1"
+  },
+  "engines": {
+    "node": "14.X"
   }
 }
