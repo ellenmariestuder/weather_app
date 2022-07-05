@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "rails s",
+    "start": "rails sbundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
