@@ -12,3 +12,7 @@ Simple weather app that displays weather information for pre-selected and user-s
  * Backend: Rails
  * API: openweathermap.org
 
+## To Deploy
+ 1. Clone this repository
+ 2. Run `rails server` or `rails s` in the terminal
+ 3. Open the url specified at 'Listening on' in the terminal output (e.g. `http://127.0.0.1:3000`)
